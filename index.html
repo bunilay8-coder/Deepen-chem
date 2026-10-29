@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepen Chemicals</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo">DEEPEN <span>CHEMICALS</span></div>
+            
+            <!-- Hamburger Menu for Mobile -->
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#products">Products</a>
+                <a href="#contact">Contact</a>
+                <a href="https://wa.me/919820226628?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20a%20particular%20product." class="nav-btn" target="_blank">WhatsApp</a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=deepenchemicals1@gmail.com&su=Product%20Inquiry&body=Hello%20Deepen%20Chemicals%2C%0A%0AI%20would%20like%20to%20inquire%20about%20a%20particular%20product." class="nav-btn" target="_blank">Email</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HOME / HERO SECTION -->
+    <section id="home" class="hero">
+        <canvas id="particle-canvas"></canvas>
+
+        <div class="container hero-content">
+            <h1>DEEPEN CHEMICALS</h1>
+            <p>Your trusted partner in chemical trading since 1995. Delivering quality, reliability, and hard-to-find solutions for global industries.</p>
+            <div class="hero-buttons">
+                <a href="#products" class="btn btn-primary">Explore Products</a>
+                <a href="#about" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+        <div class="container about-grid">
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p><strong>Welcome to Deepen Chemicals – For Everything in Chemicals.</strong></p>
+                <p>Deepen Chemicals is a premier importer and supplier specializing in agrochemicals, technical raw materials, amino acids, pharmaceuticals, fine chemicals, and active pharmaceutical ingredients (APIs). We focus on sourcing and supplying high-quality raw materials, solvents, and intermediates. Backed by a strong global supply chain, we import premium products from trusted manufacturers in China, Korea, Taiwan, Germany, and other countries.</p>
+                <p>Our core objective is to deliver technology-based, reasonably priced products with excellent quality. We have successfully tied up with numerous global manufacturers to ensure a steady supply of critical APIs and intermediates. Our unwavering commitment to quality and reliability has allowed us to build long-standing relationships with many of India's leading pharmaceutical and agrochemical manufacturers.</p>
+                <p>We look forward to establishing new business relations with you based on equality and mutual benefit. We are committed to providing our best service and competitive pricing. Please reach out to us with your specific inquiries, and we will be pleased to assist you immediately.</p>
+                
+                <a href="#contact" class="btn btn-outline-dark">Contact Us</a>
+            </div>
+            <div class="about-image-wrapper"></div>
+        </div>
+    </section>
+
+    <!-- PRODUCTS SECTION -->
+    <section id="products" class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Products</h2>
+                <p>Explore our comprehensive catalog of high-quality chemicals tailored for diverse industrial applications. Search or filter by category below.</p>
+            </div>
+            
+            <div class="product-controls">
+                <div class="search-box">
+                    <input type="text" id="product-search" placeholder="Search for a product (e.g., Acetone, Ethanol)...">
+                </div>
+                <div class="filter-box">
+                    <select id="category-filter">
+                        <option value="Organic Solvents & Liquid Intermediates" selected>Organic Solvents & Liquid Intermediates</option>
+                        <option value="Agro-Chemicals & Crop Protection Techs">Agro-Chemicals & Crop Protection Techs</option>
+                        <option value="APIs, Fine Chemicals & Reaction Intermediates">APIs, Fine Chemicals & Reaction Intermediates</option>
+                        <option value="Amino Acids, Food Additives & Nutraceuticals">Amino Acids, Food Additives & Nutraceuticals</option>
+                        <option value="Pharmaceutical Excipients, Polymers & Surfactants">Pharmaceutical Excipients, Polymers & Surfactants</option>
+                        <option value="Basic Inorganics, Acids, Alkalis & Inorganic Salts">Basic Inorganics, Acids, Alkalis & Inorganic Salts</option>
+                        <option value="All">View All Products</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="product-list" class="product-grid"></div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+        <div class="container contact-grid">
+            <div class="contact-info">
+                <h2>Contact Us</h2>
+                <p>Deepen Chemicals has been serving the industry with a wide portfolio of specialty, industrial, and hard-to-find chemical products.</p>
+                
+                <div class="contact-detail">
+                    <h4>Reach us at</h4>
+                    <p>+91-9820226628</p>
+                    <p>+91-8779682278</p>
+                    <p class="email-text">Email: deepenchemicals1@gmail.com</p>
+                </div>
+
+                <div class="contact-detail">
+                    <h4>Office Address</h4>
+                    <p>Gala No.1, Rajaram Mhatre Welfare Association, R.T. Road, Dahisar (East),<br> Mumbai - 400068</p>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <form id="contact-form" action="https://formsubmit.co/ajax/deepenchemicals1@gmail.com" method="POST">
+                    <div class="form-group">
+                        <label>Name*</label>
+                        <input type="text" name="First Name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Last name</label>
+                        <input type="text" name="Last Name" placeholder="Your last name">
+                    </div>
+                    <div class="form-group">
+                        <label>Company Name</label>
+                        <input type="text" name="Company" placeholder="Your Organization Name">
+                    </div>
+                    <div class="form-group">
+                        <label>Your email*</label>
+                        <input type="email" name="Email" placeholder="Your email address" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Message*</label>
+                        <textarea name="Message" placeholder="Enter your message" required></textarea>
+                    </div>
+                    <button type="submit" id="submit-btn" class="btn btn-primary" style="width: 100%;">Submit</button>
+                </form>
+                
+                <div id="success-message" style="display: none;">
+                    <h3 style="color: #00A896; margin-bottom: 10px;">Thank You!</h3>
+                    <p style="color: var(--text-dark); font-size: 1.05rem;">Your request has been submitted, an associate from Deepen Chemicals will reach you out shortly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">DEEPEN <span>CHEMICALS</span></div>
+                <p class="copyright">© 2025. All rights reserved.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-reach">
+                <h4>Quick Reach</h4>
+                <p>Enter your business email address</p>
+                <form id="quick-reach-form">
+                    <input type="email" name="Quick Reach Email" placeholder="our support team will get back to you" required>
+                    <button type="submit" id="quick-submit-btn" class="btn-blue">Submit your inquiry now</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING CHATBOT BUTTON -->
+    <div class="chatbot-float" id="chat-toggle" aria-label="Chat with us">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C6.48 2 2 6.48 2 12C2 13.54 2.35 15 2.96 16.31L2 22L7.69 21.04C8.99 21.65 10.46 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C10.62 20 9.32 19.59 8.23 18.89L3.8 19.6L4.51 15.17C3.81 14.08 3.4 12.78 3.4 11.4C3.4 6.73 7.22 2.9 11.9 2.9C16.58 2.9 20.4 6.73 20.4 11.4C20.4 16.07 16.58 20 11.9 20H12Z" fill="white"/>
+            <circle cx="8" cy="12" r="1.5" fill="white"/>
+            <circle cx="12" cy="12" r="1.5" fill="white"/>
+            <circle cx="16" cy="12" r="1.5" fill="white"/>
+        </svg>
+    </div>
+
+    <!-- CHAT WINDOW -->
+    <div class="chat-window" id="chat-window">
+        <div class="chat-header">
+            <div class="chat-title">
+                <span class="status-dot"></span>
+                Basic information about products.
+            </div>
+            <button class="chat-close" id="chat-close">&times;</button>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <div class="message bot-message">
+                Hello! I am the Deepen Chemicals Assistant. Ask me about any chemical, and I'll check our catalog for you.
+            </div>
+        </div>
+        <div class="chat-input-area">
+            <input type="text" id="chat-input" placeholder="Type a chemical name (e.g., Acetone)...">
+            <button id="chat-send">Send</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
